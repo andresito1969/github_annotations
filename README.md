@@ -13,3 +13,6 @@ git switch "my_branch"
 El head básicamente indica donde estamos actualmente, el HEAD puede ser los últimos cambios en nuestra rama o puede ser un checkout a un HASH commit previo que se haya hecho.
 
 Entonces HEAD~1 indica del commit en el que stamos actualmente, señala el anterior y así hasta el infinito :D
+
+# Git states
+Changed, staged and commited
