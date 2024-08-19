@@ -10,13 +10,31 @@ extender el proyecto por ejemplo si estuviera deprecado, podríamos gracias a es
 El funcionamiento es simple, vamos a un repo lo forkeamos y, luego vamos subiendo nuestros cambios y, actualizando 
 si queremos nuestra rama main con el repo original, para acabar haciendo una pull request, en el repo de origen.
 
-# Useful commands
+# New Useful commands
 git commit -am 
 git status -s
 git reset --{soft, hard, mixed} HEAD~1
 git commit --amend -m "Change prev git commit message"
 git branch "new_branch" > git switch -c "new_branch" > git checkout -b "new_branch"
 git switch "my_branch"
+
+# FLOWS (Pull request)
+Básicamente hay varias formas de trabajar en git, las más conocidas son:
+  * Git flow (Crear una rama main y otra de testing + ramas support que parten de main
+    y se van subiendo a testing, en caso de funcionar esas ramas pasan a main), forma arcaica.
+    
+  * Github flow / PR flow (Trabajamos sobre una rama main y ramas support que vayamos creando,
+    esas ramas una vez están a punto, se va solicitando su pull request, la cual puede ser aceptada por personas del equipo).
+  
+  * Trunk Based Development (Trabajar sobre una única rama y, directamente ir subiendo los cambios)
+  * Ship show ask (Combinación entre PR flow y Trunk Based Development, podemos shippear es decir pasar directamente los cambios
+    sin preguntar a nadie, podemos hacer un show crear una PR pero autoaceptarla para que quede constancia o ask que sería
+    el funcionamiento normal de las PR)
+
+Ambos tienen sus ventajas y desventajas, para poner algo de contexto el trunk based development aunque suene contraintuitivo suele usarse mucho
+en equipos muy maduros y con un nivel elevado, ya que puede ser algo peligroso en equipos que gozan de una menor experiencia.
+
+Para equipos con menos experiencia es más recomendado Github flow / PR flow.
 
 # HEAD
 El head básicamente indica donde estamos actualmente, el HEAD puede ser los últimos cambios en nuestra rama 
