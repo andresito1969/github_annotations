@@ -1,5 +1,4 @@
-# github_annotations
-Some github notes
+### Git tips sacados del libor de midu
 
 # FORK
 Básicamente se crea otro repo que apunta al repo de origen, con lo cual no necesitamos permisos y 
@@ -43,6 +42,8 @@ Para equipos con menos experiencia es más recomendado Github flow / PR flow.
  * De usar gitflow nunca partir de la rama testing ni ninguna otra a menos que se tenga conocimiento, partir siempre de main.
  * Hacer uso de gitignore para no subir mucha "mierda"
  * Revisar cada commit hecho e intentar limpiar "basura" como espacios extra y etc (esto puede ser arreglado con un linter genérico)
+ * Intentar automatizar tareas a la hora de integrar, por ejemplo en caso de que se acepte código malicioso, hacer un revert de este
+   mediante github actions o jenkins por ejemplo.
 
 # HEAD
 El head básicamente indica donde estamos actualmente, el HEAD puede ser los últimos cambios en nuestra rama 
