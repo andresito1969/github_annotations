@@ -36,6 +36,14 @@ en equipos muy maduros y con un nivel elevado, ya que puede ser algo peligroso e
 
 Para equipos con menos experiencia es más recomendado Github flow / PR flow.
 
+# Buenas prácticas
+ * Enviar un mensaje de commit conciso y explicativo, con un prefijo que indique (Test, development, feature, bugfix etc).
+ * No hacer monster commit (anti patrón) e ir haciendo commit constantemente para que sea fácil de seguir.
+ * No llenar los repos de muchas ramas en el origin.
+ * De usar gitflow nunca partir de la rama testing ni ninguna otra a menos que se tenga conocimiento, partir siempre de main.
+ * Hacer uso de gitignore para no subir mucha "mierda"
+ * Revisar cada commit hecho e intentar limpiar "basura" como espacios extra y etc (esto puede ser arreglado con un linter genérico)
+
 # HEAD
 El head básicamente indica donde estamos actualmente, el HEAD puede ser los últimos cambios en nuestra rama 
 o puede ser un checkout a un HASH commit previo que se haya hecho.
