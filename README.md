@@ -27,3 +27,9 @@ Entonces HEAD~1 indica del commit en el que stamos actualmente, señala el anter
 # Git states
 Changed, staged and commited
 
+# TIPS
+En el libro de midu, hay varias páginas donde podemos acceder a proyectos que requieran de ayuda de la comunidad.
+También es importante contrubuir ya que es una forma de agradecer por tanto código y recursos gratis
+que hemos consumido en toda nuestra vida.
+También la otra es que nos aumenta muchísimo el nivel, ya que otras personas revisarán nuestros códigos
+y, nosotros también.
